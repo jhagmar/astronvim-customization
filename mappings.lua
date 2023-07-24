@@ -22,12 +22,15 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<A-x>"] = { "/[\\)\\}\\]\\>\\'\\\"]<cr>", desc = "Jump out of Enclosure" },
+    ["<A-w>"] = { "ddO", desc = "Jump out of Enclosure" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
   i = {
-    ["<C-z>"] = { "<esc>/[\\)\\}\\]\\>\\'\\\"]<cr>a", desc = "Jump out of Enclosure" },
+    ["<A-x>"] = { "<esc>/[\\)\\}\\]\\>\\'\\\"]<cr>a", desc = "Jump out of Enclosure" },
+    ["<A-w>"] = { "<esc>ddO", desc = "Jump out of Enclosure" },
   },
 }
